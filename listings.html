@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <!--
+  This HTML document is the UI for the car rental platform.
+  It provides a search bar with filters for location, transmission type, and max price.
+  The user can input their preferred search criteria and click the "Search" button to
+  retrieve a list of available cars that match the criteria.
+
+  The document also includes a section for car listings, which displays a list of available
+  cars. Each car is represented by a card with an image, details, and a "Book Now" button.
+  The user can click on the "Book Now" button to book a car for rent.
+  -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Cars for Rent</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+  <!-- Search Bar & Filters -->
+  <section class="filters">
+    <input type="text" placeholder="Location">
+    <select>
+      <option>Transmission Type</option>
+      <option>Manual</option>
+      <option>Automatic</option>
+    </select>
+    <input type="number" placeholder="Max Price">
+    <button>Search</button>
+  </section>
+
+  <!-- Car Listings -->
+  <section class="car-listings">
+    <div class="car-card">
+      <img src="assets/car1.jpg" alt="Car Image">
+      <h3>Toyota Corolla (2020)</h3>
+      <p>$30/day</p>
+      <p>Pickup: Downtown Location</p>
+      <a href="booking.html" class="book-now">Book Now</a>
+    </div>
+    <!-- Add more car cards here -->
+  </section>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
